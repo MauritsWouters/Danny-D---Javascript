@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var student = new Array(
+        "Zakaria",
+        "Albert",
+        "Hamsa",
+        "Mike",
+        "Pieter",
+        "Harry"
+      );
+
+      /*
+      for (x = 0; x < student.length; x++) {
+        document.write("<br>Element " + x + " is " + student[x]);
+      }
+      */
+
+      /*
+      for (x = 0; x < student.length; x++) {
+        if (x % 2 == 0) {
+          document.write("<br>Element " + x + " is " + student[x]);
+        }
+      }
+      */
+
+      /*
+      var maand = [
+        "Januari",
+        "Februari",
+        "Maart",
+        "April",
+        "Mei",
+        "Juni",
+        "Juli",
+        "Augstus",
+        "Sepetember",
+        "Oktober",
+        "November",
+        "December"
+      ];
+
+      var lengte = maand.length;
+
+      for (i = 0; i < lengte; i++) {
+        document.write(
+          "<br> Maand " + (maand.indexOf(maand[i]) + 1) + " is " + maand[i]
+        );
+      }
+      */
+
+      var tekst = "Hij lijkt een beetje op Nelson Mandela.";
+
+      var lengte = tekst.length;
+      var spaties = 0;
+      document.write("<br>");
+      for (x = 0; x < lengte; x++) {
+        var teken = tekst.charAt(x);
+        document.write(teken);
+        if (teken == "e") {
+          spaties++;
+        }
+      }
+      document.write("<br>Tekst bevat " + spaties + " spaties");
+    </script>
+  </body>
+</html>
