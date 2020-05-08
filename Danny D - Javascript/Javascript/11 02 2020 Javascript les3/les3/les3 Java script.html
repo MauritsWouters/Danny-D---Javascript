@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+var studenten= new Array("Jan", "Jozef", "Piet");
+var plaats=studenten.indexOf("Jozef");
+studenten.splice(plaats,1);
+console.log(studenten);
+
+var studentenKopie = studenten.slice(); 
+//echte kopie
+studenten.push ("Miet");
+console.log (studenten);
+console.log (studentenKopie);
+
+
+
+var studentenstring = studenten.join ("-");
+console.log (studentenstring)
+    
+
+var mijnString = "Vandaag, is het, dinsdag";
+var mijnArray = mijnString.split(", ");
+console.log (mijnString);
+console.log (mijnArray);
+
+
+
+</script>
+</body>
+</html>
