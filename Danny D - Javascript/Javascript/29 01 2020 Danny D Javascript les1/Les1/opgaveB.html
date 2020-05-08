@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>opgaveB</title>
+</head>
+<body>
+    <script>
+
+        var land = prompt ("Vliegbestemming?");
+
+            document.write("<h1>Mijn reis deze zomer.</h1>");
+            
+            document.write("Deze zomer vlieg je naar \"" + land + "\"<br>");
+
+
+        var bestemming1Naam = prompt ("Bestemming1?");
+        var bestemming2Naam = prompt ("Bestemming2?");
+        var bestemming3Naam = prompt ("Bestemming3?");
+        var Vliegreis = 850
+        var bestemming1kost = 50
+        var bestemming2kost = 250
+        var bestemming3kost = 100
+        var totaal = (Vliegreis + bestemming1kost + bestemming2kost + bestemming3kost);
+        var totaalBTW = ((Vliegreis + bestemming1kost + bestemming2kost + bestemming3kost)*0.21)+totaal;
+
+            document.write("<br>Je bezoekt volgende plaatsen: \" " 
+            + bestemming1Naam + "\", \""+ bestemming2Naam + "\", \""+ bestemming3Naam + "\"<br>");
+            
+            document.write("<br>De kostprijs is: ");
+            
+            document.write("<br>Vliegreis: " + Vliegreis);
+            
+            document.write("<br>Reis naar \"" + bestemming1Naam + "\" :" + bestemming1kost);
+            
+            document.write("<br>Reis naar \"" + bestemming2Naam + "\" :" + bestemming2kost);
+            
+            document.write("<br>Reis naar \"" + bestemming3Naam + "\" :" + bestemming3kost);
+            
+            document.write("<br>------------------");
+            
+            document.write("<br>Totaal: " + totaal);
+            
+            document.write("<br>btwPercentage: 0.21");
+            
+            document.write("<br>------------------");
+            
+            document.write("<br>Totaal inclusief btw:" + totaalBTW);
+
+    
+    
+    
+    </script>
+</body>
+</html>
