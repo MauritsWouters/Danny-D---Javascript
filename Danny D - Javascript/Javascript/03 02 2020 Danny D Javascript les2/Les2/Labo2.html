@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+    /*
+    var lengte = prompt("Wat is je lengte in meters");
+    var feet = (lengte*3.28084);
+    document.write(feet.toFixed(2));
+    */
+
+    /*
+    var inhoudInLiter = parseFloat(prompt ("Hoeveel liter?"));
+    var literNaarGallons = 0.264172052;
+    console.log (typeof inhoudInLiter);
+
+    var inhoudInGallons = (inhoudInLiter*literNaarGallons);
+    console.log(typeof inhoudInGallons);
+    document.write ("<h1>Inhouds omzetting</h1>");
+    document.write ("<p>\"" +inhoudInLiter + "\"" + " omgezet naar galons is: \"" + inhoudInGallons + "\"</p>");
+    */
+
+    
+    var aantalEuro = parseFloat(prompt ("Hoeveel Euro's wil je omwisselen?"));
+    console.log(typeof aantalEuro)
+    var euroNaarDollar = parseFloat(prompt ("Wat is de koers?"));
+    console.log(typeof euroNaarDollar)
+    var comissiePercentage = aantalEuro * 0.02;
+    var vasteKost = 10;
+    var aantalDollarsZonderKoers = aantalEuro - comissiePercentage - vasteKost;
+    var aantalDollars =  (aantalEuro - comissiePercentage - vasteKost) * euroNaarDollar;
+
+    document.write("<h1>Euro naar Dollars</h1>");
+    document.write("<p>Je wil " + aantalEuro + "euro omzetten naar dollars tegen een koers van " + euroNaarDollar + " dollar per euro.</p>"); 
+    document.write("De bank rekent 2% comissie aan: "+ comissiePercentage+ " euro.");
+    document.write("<p>En een vaste kost van : " + vasteKost + " euro.</p>"); 
+    document.write("Je krijgt dus: " + aantalEuro + " - " + comissiePercentage + " - 10 = " + aantalDollarsZonderKoers + " * " + euroNaarDollar + " = " + (aantalDollars).toFixed(2) + " aantal dollars.");
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
