@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var vraag = prompt("Wanneer ga je op poensioen?");
+
+      var nu = new Date();
+      var jaartal = nu.getFullYear();
+
+      if (vraag == null) {
+        document.write("U heeft geannuleerd!");
+      } else if (vraag.length == 0) {
+        document.write("U heeft niets in gegeven?");
+      } else if (vraag.length < 4) {
+        document.write("Geef een jaartal in met 4 cijfers");
+      } else if (vraag < jaartal) {
+        document.write("Ben je al pensioen dan?");
+      } else {
+        document.write("Je gaat op pensioen binnen x jaar.");
+      }
+    </script>
+  </body>
+</html>
