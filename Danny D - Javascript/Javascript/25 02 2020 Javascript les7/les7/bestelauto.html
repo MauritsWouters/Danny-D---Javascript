@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function bestelAuto(merk, klasse, kleur) {
+        if (typeOf arguments [0] === "undefined") {
+          //gebruik default waarde
+          merk = "Audi";
+          klasse = "Klasse C";
+          kleur = "Rood";
+        }
+
+        document.write(
+          "<br>Bestelde: een " + merk + " " + klasse + "in" + kleur
+        );
+      }
+
+      bestelAuto();
+      bestelAuto("Porsche");
+      bestelAuto("Volvo", "Klasse A");
+      bestelAuto("BMW", "Klasse B", "Blauw");
+    </script>
+  </body>
+</html>
