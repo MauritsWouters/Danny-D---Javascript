@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loonberekning.</title>
+</head>
+<body>
+    <script>
+        alert("Loonberekening.");
+    
+
+        document.write("<br> <h1>Loonberekening.</h1>");
+    </script>
+
+    <script>
+        var antwoord = confirm ("Wil je je loon berekenen?");
+        document.write("<P>Jouw antwoord was:" + antwoord + "</P>");
+        console.log("Wil je je loon berekenen?");
+        console.log("Jouw antwoord was: " + antwoord);
+
+    </script>
+
+
+    <script>
+        var jaarloon=prompt("Hoeveel wil je netto verdienen per jaar?", "1000");
+        var maandloon=jaarloon/12;
+        var vakantiegeld=maandloon*0.50;
+
+        document.write("<br>Als je"+ jaarloon + "per jaar verdient, dan krijg je " + vakantiegeld.toFixed(2) + ".");
+        document.write("<br> Met je vakantiegeld erbij geteld zal je dan" + vakantiegeld.toFixed(2) + " verdienen.");
+
+    </script>
+
+
+</body>
+</html>
