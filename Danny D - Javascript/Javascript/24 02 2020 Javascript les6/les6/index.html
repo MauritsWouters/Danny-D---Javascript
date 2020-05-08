@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var gewicht = parseFloat(prompt("Wat is jouw gewicht?"));
+      if (gewicht == null) {
+        document.write("<br>U heeft geannuleerd");
+      } else if (gewicht == 0) {
+        document.write("<br>U heeft niets ingevuld.");
+      } else {
+        var lengte = parseFloat(prompt("Wat is je lengte?"));
+        if (lengte == null) {
+          document.write("<br>U heeft geannuleerd");
+        } else if (lengte == 0) {
+          document.write("<br>U heeft niets ingevuld.");
+        } else if (isNaN(lengte)) {
+          document.write("hgfjhg");
+        } else {
+          var bmi = (gewicht / (lengte * lengte)).toFixed(1);
+
+          if (bmi < 18.5) {
+            document.write(
+              "<br> uw BMI is " +
+                bmi +
+                ", dus onder 18.5. U heeft ondergewicht."
+            );
+          } else if (bmi >= 18.5 && bmi < 25) {
+            document.write(
+              "<br>uw BMI is " +
+                bmi +
+                ", dus tussen 18.5 & 25. U heeft gezond gewicht."
+            );
+          } else if (bmi >= 25 && bmi < 30) {
+            document.write(
+              "<br>uw BMI is " +
+                bmi +
+                ", dus tussen 25 & 30. U heeft overgewicht."
+            );
+          } else {
+            document.write(
+              "<br>uw BMI is " + bmi + ", dus over 30. U heeft obesitas."
+            );
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
