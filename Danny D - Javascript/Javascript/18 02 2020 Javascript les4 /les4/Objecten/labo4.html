@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var eersteSchooldag = new Date("2020-01-20");
+      var laatsteSchooldag = new Date("2020-06-30");
+      var eendag = 86400000;
+
+      var aantalDagenOpleiding = (
+        (laatsteSchooldag - eersteSchooldag) /
+        eendag
+      ).toFixed(0);
+      document.write(eersteSchooldag + "<br>" + laatsteSchooldag);
+      document.write("<br> aantal dagen opleiding " + aantalDagenOpleiding);
+    </script>
+  </body>
+</html>
